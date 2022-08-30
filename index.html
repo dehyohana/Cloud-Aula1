@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />              
+    <link rel="stylesheet" href="styles.css" />
+    <title>Deborah Yohana</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="img/atom-svgrepo-com (2).svg" alt="Logo" />
+        <ul>
+          <li id="github">
+            <a href="https://github.com/dehyohana" target="_blank">
+              <img id="github" src="img/github.png" />
+              <br />
+              Github
+            </a>
+          </li>
+          <li id="linkedin">
+            <a
+              href="http://linkedin.com/in/deborah-yohana-bertoldo"
+              target="_blank"
+            >
+              <img id="linkedin" src="img/linkedin.png" />
+              <br />
+              Linkedin
+            </a>
+          </li>
+          <li id="gmail">
+            <a href="mailto:deh.yohana@gmail.com">
+              <img id="gmail" src="img/gmail.png" />
+              <br />
+              email
+            </a>
+          </li>
+          <li id="lattes">
+            <a href="http://lattes.cnpq.br/6371761511291390" target="_blank">
+              <img id="lattes" src="img/lattes.png" />
+              <br />
+              Lattes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Deborah Yohana Bertoldo</h1>
+          <h5>Mulheres em Cloud</h5>
+        </div>
+        <div onclick="displayAbout()" id="arrow">
+            <i class='fa fa-sort-down'></i>
+        </div>
+        <div style="display: none;" id="about" >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            quasi. Quo reprehenderit consequuntur, incidunt perspiciatis ipsum
+            sequi adipisci ipsam deleniti non minus! Nulla maxime nemo optio
+            debitis aliquam. Quasi, veritatis?
+          </p>
+        </div>
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="seu melhor e-mail :)" />
+            <button>enviar!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('arrow')
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about')
+            display.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
